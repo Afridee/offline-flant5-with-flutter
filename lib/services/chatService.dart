@@ -18,6 +18,16 @@ class ChatService extends GetxController {
      update();
    }
 
+   setLoadingToTrue(){
+     isLoading = true;
+     update();
+   }
+
+    setLoadingToFalse(){
+      isLoading = false;
+      update();
+    }
+
    // createCaptionWithBlip({required File diagram, required String question}) async{
    //
    //   isLoading = true;

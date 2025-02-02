@@ -7,6 +7,8 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:lottie/lottie.dart';
 
+import 'ffi/flutterUsage.dart';
+
 class ChatScreen extends StatefulWidget {
 
   @override
@@ -116,7 +118,18 @@ class _ChatScreenState extends State<ChatScreen> {
                         IconButton(
                           icon: Icon(Icons.send, color: Color(0xFF4EF28F)), // Bright Green
                           onPressed: () async {
-                            runStuff();
+                            if(!cs.isLoading){
+                              chatService.addToMessages(message: typed.text, isMe: true, img: uploadedDiagram!=null?  uploadedDiagram!.path : null);
+                              cs.setLoadingToTrue();
+                              Map<String, dynamic> encoded = await encode(question: typed.text);
+                              List<List<int>> output = await runInference(data: encoded);
+                              String decoded = await decode(encoded: output[0]);
+                              cs.setLoadingToFalse();
+                              chatService.addToMessages(message: decoded, isMe: false, img: uploadedDiagram!=null?  uploadedDiagram!.path : null);
+                              print(encoded);
+                              print(decoded);
+                            }
+                            //runStuff();
                             //chatService.encode(question: typed.text);
                             //chatService.flasktest();
                             //chatService.addToMessages(message: typed.text, isMe: true, img: uploadedDiagram!=null?  uploadedDiagram!.path : null);

@@ -2,14 +2,12 @@ import 'dart:math';
 import 'package:flutter/services.dart';
 import 'package:onnxruntime/onnxruntime.dart';
 
-Map<String, dynamic> data = {"input_ids":[[863,1525,48,15651,822,10,363,19,46,2586,2358,58,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]],"attention_mask":[[1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]],"decoder_input_ids":[[0]]};
-
 int argmax(List<double> array) {
   double maxValue = array.reduce(max);
   return array.indexOf(maxValue);
 }
 
-runStuff() async {
+Future<List<List<int>>> runInference({required Map<String, dynamic> data}) async {
   final sessionOptions = OrtSessionOptions();
   const assetFileName = './models/flan-t5.onnx';
   final rawAssetFile = await rootBundle.load(assetFileName);
@@ -19,6 +17,13 @@ runStuff() async {
   List<List<int>> inputIds = data["input_ids"];
   List<List<int>> attentionMask = data["attention_mask"];
   List<List<int>> decoderInputIds = data["decoder_input_ids"];  // Typically starts with [0] for <BOS>
+
+  print("inputIds");
+  print(inputIds);
+  print("attentionMask");
+  print(attentionMask);
+  print("decoder_input_ids");
+  print(decoderInputIds);
 
   OrtValueTensor inputIdsTensor = OrtValueTensor.createTensorWithDataList(inputIds, [1, inputIds[0].length]);
   OrtValueTensor attentionMaskTensor = OrtValueTensor.createTensorWithDataList(attentionMask, [1, attentionMask[0].length]);
@@ -63,6 +68,7 @@ runStuff() async {
   session.release();
   OrtEnv.instance.release();
 
+  print("output from model:");
   print(decoderInputIds);
 
   return decoderInputIds;  // This would typically be your function's output

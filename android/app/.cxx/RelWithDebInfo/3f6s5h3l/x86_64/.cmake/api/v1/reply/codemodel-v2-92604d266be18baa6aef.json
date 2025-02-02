@@ -1,0 +1,202 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "sentencepiece_build",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/external/sentencepiece"
+				},
+				{
+					"build" : "sentencepiece_build/src",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/external/sentencepiece/src",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "sentencepiece_build/third_party",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/external/sentencepiece/third_party"
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MyChatbotProject",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "sentencepiece",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "chatbot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-chatbot-RelWithDebInfo-b9f85089fc4cd17560be.json",
+					"name" : "chatbot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sentencepiece::@f615ec471384ddc275e9",
+					"jsonFile" : "target-sentencepiece-RelWithDebInfo-82b0545d6d3dba429ac1.json",
+					"name" : "sentencepiece",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sentencepiece-static::@f615ec471384ddc275e9",
+					"jsonFile" : "target-sentencepiece-static-RelWithDebInfo-7384217f1a61158298fc.json",
+					"name" : "sentencepiece-static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sentencepiece_train::@f615ec471384ddc275e9",
+					"jsonFile" : "target-sentencepiece_train-RelWithDebInfo-1ae90f7feca0ad29c1da.json",
+					"name" : "sentencepiece_train",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sentencepiece_train-static::@f615ec471384ddc275e9",
+					"jsonFile" : "target-sentencepiece_train-static-RelWithDebInfo-037682103eb89928217f.json",
+					"name" : "sentencepiece_train-static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "spm_decode::@f615ec471384ddc275e9",
+					"jsonFile" : "target-spm_decode-RelWithDebInfo-f5ebef9650c6351da730.json",
+					"name" : "spm_decode",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "spm_encode::@f615ec471384ddc275e9",
+					"jsonFile" : "target-spm_encode-RelWithDebInfo-1a92b6dbfe2c1ea966a2.json",
+					"name" : "spm_encode",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "spm_export_vocab::@f615ec471384ddc275e9",
+					"jsonFile" : "target-spm_export_vocab-RelWithDebInfo-89d96ff2d83bbd0d1ca8.json",
+					"name" : "spm_export_vocab",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "spm_normalize::@f615ec471384ddc275e9",
+					"jsonFile" : "target-spm_normalize-RelWithDebInfo-f92a8793df4b73bced53.json",
+					"name" : "spm_normalize",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "spm_train::@f615ec471384ddc275e9",
+					"jsonFile" : "target-spm_train-RelWithDebInfo-a46fe1479c50f6410763.json",
+					"name" : "spm_train",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android/app/.cxx/RelWithDebInfo/3f6s5h3l/x86_64",
+		"source" : "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

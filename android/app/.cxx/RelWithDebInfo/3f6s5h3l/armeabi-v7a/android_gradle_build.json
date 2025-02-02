@@ -1,0 +1,119 @@
+{
+  "buildFiles": [
+    "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android/CMakeLists.txt",
+    "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/external/sentencepiece/CMakeLists.txt",
+    "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/external/sentencepiece/src/CMakeLists.txt",
+    "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/external/sentencepiece/third_party/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/afridee/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android/app/.cxx/RelWithDebInfo/3f6s5h3l/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/afridee/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android/app/.cxx/RelWithDebInfo/3f6s5h3l/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "chatbot::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "chatbot",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libchatbot.so",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    },
+    "sentencepiece::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "sentencepiece",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so",
+      "runtimeFiles": []
+    },
+    "sentencepiece-static::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "sentencepiece-static",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android/app/.cxx/RelWithDebInfo/3f6s5h3l/armeabi-v7a/sentencepiece_build/src/libsentencepiece.a"
+    },
+    "sentencepiece_train::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "sentencepiece_train",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece_train.so",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    },
+    "sentencepiece_train-static::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "sentencepiece_train-static",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/android/app/.cxx/RelWithDebInfo/3f6s5h3l/armeabi-v7a/sentencepiece_build/src/libsentencepiece_train.a"
+    },
+    "spm_decode::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "spm_decode",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/spm_decode",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    },
+    "spm_encode::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "spm_encode",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/spm_encode",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    },
+    "spm_export_vocab::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "spm_export_vocab",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/spm_export_vocab",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    },
+    "spm_normalize::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "spm_normalize",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/spm_normalize",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece_train.so",
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    },
+    "spm_train::@f615ec471384ddc275e9": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "spm_train",
+      "output": "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/spm_train",
+      "runtimeFiles": [
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece_train.so",
+        "/Users/afridee/StudioProjects/biologyChatBotMigrated/biologychatbot/build/app/intermediates/cxx/RelWithDebInfo/3f6s5h3l/obj/armeabi-v7a/libsentencepiece.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/afridee/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/afridee/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp",
+    "cc"
+  ]
+}
