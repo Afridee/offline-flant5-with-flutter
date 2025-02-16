@@ -122,6 +122,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               chatService.addToMessages(message: typed.text, isMe: true, img: uploadedDiagram!=null?  uploadedDiagram!.path : null);
                               cs.setLoadingToTrue();
                               Map<String, dynamic> encoded = await encode(question: typed.text);
+                              typed.clear();
                               List<List<int>> output = await runInference(data: encoded);
                               String decoded = await decode(encoded: output[0]);
                               cs.setLoadingToFalse();

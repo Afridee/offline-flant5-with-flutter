@@ -24,7 +24,7 @@ sentencepiece::SentencePieceProcessor* init_model(const char* model_path) {
 //    - Build attention mask
 //    - Set decoder_input_ids = [pad_id]
 EncodeResult* encode_input(sentencepiece::SentencePieceProcessor* sp, const char* question) {
-    const int MAX_LENGTH = 64;
+    const int MAX_LENGTH = 128;
 
     // Allocate an EncodeResult struct on the heap for returning via FFI
     EncodeResult* result = new EncodeResult();

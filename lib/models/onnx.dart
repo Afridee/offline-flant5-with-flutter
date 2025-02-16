@@ -31,7 +31,7 @@ Future<List<List<int>>> runInference({required Map<String, dynamic> data}) async
 
   final runOptions = OrtRunOptions();
   bool shouldStop = false;
-  int maxNewTokens = 32;
+  int maxNewTokens = 64;
   int generatedTokens = 0;
   int eosTokenId = 1; // You need to set this based on your model's vocabulary
 
